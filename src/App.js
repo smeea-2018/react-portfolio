@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./container/Home";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./AppRoutes";
+import NavBar from "./components/NavBar";
 // const name = "Smeea";
 // const navLink = [
 //   {
@@ -38,9 +39,24 @@ import Home from "./container/Home";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
+      <NavBar
+        navItems={[
+          {
+            label: "About Me",
+            href: "/aboutme",
+          },
+          {
+            label: "Portfolio",
+            href: "/Portfolio",
+          },
+          {
+            label: "Contact Me",
+            href: "/contactme",
+          },
+          { label: "Resume", href: "/resume" },
+        ]}
+      />
+      <AppRoutes />
     </BrowserRouter>
   );
 }
