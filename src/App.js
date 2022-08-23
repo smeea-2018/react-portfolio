@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 // const name = "Smeea";
 // const navLink = [
 //   {
@@ -57,6 +58,7 @@ function App() {
         ]}
       />
       <AppRoutes />
+      <Footer />
     </BrowserRouter>
   );
 }
