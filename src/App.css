@@ -43,11 +43,20 @@
   margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.flex-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: blueviolet;
+}
+
+/* . @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
