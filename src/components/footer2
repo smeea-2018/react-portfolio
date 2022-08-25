@@ -1,0 +1,65 @@
+{/* {/* <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          p: 3,
+          m: 5,
+          border: "3px solid black",
+        }}
+      > */}
+    
+
+        {/* </div>
+      <div> */}
+        {/* <Box
+          component="form"
+          sx={{
+            "& .MuiTextField-root": { m: 1, width: "25ch" },
+          }}
+          noValidate
+          autoComplete="off"
+        > */}
+
+        {/* <TextField required id="outlined-required" label="Name" />
+
+        <input
+          id="my-input"
+          placeholder="Email address"
+          aria-describedby="my-helper-text"
+        />
+
+        <TextField
+          id="outlined-textarea"
+          label="Message"
+          placeholder="Placeholder"
+          multiline
+        />
+      </Box>*/ 
+
+          {/* <Box
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          p: 3,
+          m: 5,
+          border: "3px solid black",
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <h1>ContactMe</h1>
+        <div>
+          <TextField
+            id="outlined-helperText"
+            label="Name"
+            defaultValue="Default Value"
+            helperText="Required"
+          />
+        </div>
+      </Box> */}
