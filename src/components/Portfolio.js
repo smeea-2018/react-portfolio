@@ -1,4 +1,4 @@
-import ProjectCard from "../container/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 function project() {
   return (
     <div>

@@ -1,21 +1,23 @@
-import FormControl from "@mui/material/FormControl";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import FormHelperText from "@mui/material/FormHelperText";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { flexbox } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Divider from "@mui/material/Divider";
 import "../App.css";
 import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { useMediaQuery } from "@mui/material";
 
 export default function Message() {
+  const isMobile = useMediaQuery("(max-width:900px)");
   return (
     <div>
       <Paper
         sx={{
-          "& .MuiTextField-root": { m: 1, width: "40ch" },
+          "& .MuiTextField-root": {
+            m: 1,
+            minWidth: isMobile ? "100%" : "40ch",
+          },
           display: "flex",
           flexDirection: "column",
           flexWrap: "wrap",
@@ -47,6 +49,7 @@ export default function Message() {
               required
               label="Name"
               variant="outlined"
+              error
               helperText="Please enter your first name."
             />
 
@@ -63,6 +66,13 @@ export default function Message() {
               variant="outlined"
               helperText="Please enter message"
             />
+            <Button
+              variant="contained"
+              type="Submit"
+              sx={{ backgroundColor: "blue" }}
+            >
+              Send
+            </Button>
           </Stack>
         </stack>
       </Paper>

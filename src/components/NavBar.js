@@ -62,7 +62,7 @@ function NavBar({ navItems }) {
       <Typography variant="h6" sx={{ my: 2 }}>
         Smeea
       </Typography>
-      <Divider />
+      {/* <Divider /> */}
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
