@@ -12,7 +12,7 @@ const project = [
   {
     title: "Event Planning",
     description: "sss",
-    imageUrl: "weatherdashboard.JPG",
+    imageUrl: "background.avif",
     githubLink: "https://github.com/smeea-2018",
   },
   {
@@ -45,6 +45,18 @@ const project = [
     title: "Event Planning",
     description: "sss",
     imageUrl: "weatherdahboard.JPG",
+    githubLink: "https://github.com/smeea-2018",
+  },
+  {
+    title: "Event Planning",
+    description: "sss",
+    imageUrl: "weatherdashboard.JPG",
+    githubLink: "https://github.com/smeea-2018",
+  },
+  {
+    title: "Event Planning",
+    description: "sss",
+    imageUrl: "weatherdashboard.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
 ];

@@ -2,6 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
+import { grey } from "@mui/material/colors";
 export const AboutMe = () => {
   return (
     <div>
@@ -21,17 +22,18 @@ export const AboutMe = () => {
 
         <Stack spacing={2}>
           <item>
-            <Avatar
-              alt="profile pic"
-              src="../images/weatherdashboard.JPG"
-              sx={{ width: 100, height: 100, alignItems: "center" }}
-            />
+            <Avatar sx={{ bgcolor: grey, width: 80, height: 80 }}>SA</Avatar>
           </item>
           <item>
-            Full stack web developer, attended Birmingham University boot camp,
-            developed new skills in javaScript, CSS,React ,MySQL/MongoDB.
-            Focused on developing mobile-first web applications involving front
-            and backend.
+            <hr sx={{ m: 2 }}></hr>
+          </item>
+          <item>
+            <p sx={{ m: 3, P: 2 }}>
+              Full stack web developer, attended Birmingham University boot
+              camp, developed new skills in javaScript, CSS,React
+              ,MySQL/MongoDB. Focused on developing mobile-first web
+              applications involving front and backend.
+            </p>
           </item>
         </Stack>
       </Paper>
